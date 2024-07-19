@@ -87,15 +87,16 @@ body {
   outline: none;
   border-radius: 10px;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(130, 0, 115);
+  color: rgb(255, 255, 255);
   box-shadow: 2px 2px 4px rgba(46, 60, 32, 0.644);
   font-weight: 700;
 }
 .answer-output {
 }
 .ball-question-button:active {
-  background-color: rgb(130, 0, 115);
-  color: rgb(255, 255, 255);
+  background-color: #fff;
+  color: rgb(59, 7, 53);
   box-shadow: -2px -2px 4px rgba(46, 60, 32, 0.644);
 }
 .ball-section {
@@ -156,22 +157,4 @@ body {
   text-shadow: rgb(248, 102, 102) 0px -2px 0px;
 }
 .ball-footer {
-}
-.text-animation {
-  animation: colorChange 5s infinite;
-}
-
-@keyframes colorChange {
-  0% {
-    color: red;
-  }
-  30% {
-    color: blue;
-  }
-  60% {
-    color: green;
-  }
-  100% {
-    color: red;
-  }
 }
