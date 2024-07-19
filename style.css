@@ -119,8 +119,8 @@ body {
 .cont {
   position: absolute;
   display: block;
-  width: 550px;
-  height: 500px;
+  width: 560px;
+  height: 550px;
   border-radius: 50%;
   border-top: 25px solid #ffffff;
   transform: rotate(330deg);
