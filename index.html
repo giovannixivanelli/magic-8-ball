@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="ball-header">
+      <p class="header-title">This is the Magic 8-ball</p>
+    </header>
+    <main>
+
+      <section class="go-to-ball">
+        <button onclick="displayNumberAnswer()" class="ball-question-button">
+          Let's find the answers
+        </button>
+        <div id="output" class="answer-output"></div>
+      </section>
+      <section class="ball-section" id="ball-section">
+        <div class="ball">
+          <div class="cont"></div>
+          <div class="ball-number" id="ball-number"></div>
+          <div class="ball-answer" id="ball-answer"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="ball-footer"></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
