@@ -15,7 +15,11 @@
         <p class="ask-question-text">Ask the ball ang get the answers</p>
       </section>
       <section class="go-to-ball">
-        <button onclick="displayNumberAnswer()" class="ball-question-button">
+        <button
+          onclick="displayNumberAnswer()"
+          class="ball-question-button"
+          id="ball-button"
+        >
           <b>Let's find the answers</b>
         </button>
         <div id="output" class="answer-output"></div>
@@ -23,8 +27,13 @@
       <section class="ball-section" id="ball-section">
         <div class="ball">
           <div class="cont"></div>
-          <div class="ball-number" id="ball-number"></div>
-          <div class="ball-answer" id="ball-answer"></div>
+          <div class="answer">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="triangle-bottom-1"></div>
+            <div class="triangle-bottom-2"></div>
+            <div class="ball-answer" id="ball-answer"></div>
+          </div>
         </div>
       </section>
     </main>
