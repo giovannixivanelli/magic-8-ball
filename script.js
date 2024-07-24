@@ -1,12 +1,22 @@
+const button = document.getElementById("ball-button");
+const box = document.querySelector(".ball");
+const answer = document.querySelector(".ball-answer");
+const triange = document.querySelector(".triangle-bottom-1");
+button.addEventListener("click", () => {
+  box.classList.add("shaking");
+  answer.classList.add("shaking");
+  triange.classList.add("shaking");
+  setTimeout(() => {
+    box.classList.remove("shaking");
+    answer.classList.remove("shaking");
+    triange.classList.remove("shaking");
+  }, 600);
+});
+
 function displayNumberAnswer() {
   let divContainer = document.getElementById("ball-answer");
-  setTimeout(
-    divContainer.setAttribute(
-      "style",
-      "color: rgb(205, 235, 255); opacity: 1; transition-duration: 5s; "
-    ),
-    50
-  );
+  divContainer.setAttribute("style", "opacity: 1", "transition-duration: 2s");
+
   var number = Math.floor(Math.random() * 8);
   switch (number) {
     case 1:
@@ -46,8 +56,8 @@ function displayNumberAnswer() {
         "<p>Let's<br>try again";
       break;
   }
-  /* document.getElementById("ball-button").onclick = myFunction;
 
+  /* document.getElementById("ball-button").onclick = myFunction;
   function myFunction() {
     clearTimeout(divContainer);
   }*/

@@ -7,37 +7,63 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="ball-header">
-      <p class="header-title">This is the Magic 8-ball</p>
+    <header>
+      <div class="div-header">
+        <div class="ball-header">
+          <p class="header-title">
+            <a href="index.html">Magic <span class="eight">8</span>-ball</a>
+          </p>
+        </div>
+        <!-- <div class="border-line"></div> -->
+      </div>
     </header>
     <main>
-      <section class="ask-question color-change">
-        <p class="ask-question-text">Ask the ball ang get the answers</p>
-      </section>
-      <section class="go-to-ball">
-        <button
-          onclick="displayNumberAnswer()"
-          class="ball-question-button"
-          id="ball-button"
-        >
-          <b>Let's find the answers</b>
-        </button>
-        <div id="output" class="answer-output"></div>
-      </section>
       <section class="ball-section" id="ball-section">
         <div class="ball">
           <div class="cont"></div>
+          <div class="white"></div>
           <div class="answer">
             <div class="circle-1"></div>
             <div class="circle-2"></div>
             <div class="triangle-bottom-1"></div>
             <div class="triangle-bottom-2"></div>
-            <div class="ball-answer" id="ball-answer"></div>
+            <div class="triangle-bottom-3"></div>
+            <div class="ball-circle">
+              <div class="ball-answer" id="ball-answer"></div>
+            </div>
           </div>
         </div>
       </section>
+      <section class="go-to-ball">
+        <form>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Type your Question"
+            class="type-question"
+          />
+        </form>
+        <button
+          onclick="displayNumberAnswer()"
+          class="ball-question-button"
+          id="ball-button"
+        >
+          <b>Shake the ball</b>
+        </button>
+      </section>
+      <footer class="ball-footer">
+        <p>giovannixivanelli</p>
+        <div class="socials">
+          <i class="fa-brands fa-vk"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+      <script
+        src="https://kit.fontawesome.com/d05005d188.js"
+        crossorigin="anonymous"
+      ></script>
     </main>
-    <footer class="ball-footer"></footer>
-    <script src="script.js"></script>
   </body>
 </html>
