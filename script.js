@@ -1,13 +1,13 @@
 const button = document.getElementById("ball-button");
-const box = document.querySelector(".ball");
+const ball = document.querySelector(".ball");
 const answer = document.querySelector(".ball-answer");
 const triange = document.querySelector(".triangle-bottom-1");
 button.addEventListener("click", () => {
-  box.classList.add("shaking");
+  ball.classList.add("shaking");
   answer.classList.add("shaking");
   triange.classList.add("shaking");
   setTimeout(() => {
-    box.classList.remove("shaking");
+    ball.classList.remove("shaking");
     answer.classList.remove("shaking");
     triange.classList.remove("shaking");
   }, 600);
@@ -56,9 +56,4 @@ function displayNumberAnswer() {
         "<p>Let's<br>try again";
       break;
   }
-
-  /* document.getElementById("ball-button").onclick = myFunction;
-  function myFunction() {
-    clearTimeout(divContainer);
-  }*/
 }
