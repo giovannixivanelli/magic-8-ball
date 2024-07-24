@@ -27,12 +27,6 @@ button.addEventListener("click", () => {
   }, 600);
 });
 
-button.addEventListener("touchstart", (event) => {
-  box.classList.add("shaking");
-  answer.classList.add("shaking");
-  triange.classList.add("shaking");
-});
-
 function displayNumberAnswer() {
   let divContainer = document.getElementById("ball-answer");
   divContainer.setAttribute("style", "opacity: 1", "transition-duration: 2s");
