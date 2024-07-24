@@ -27,7 +27,7 @@ button.addEventListener("click", () => {
   }, 600);
 });
 
-button.addEventListener("touchend", (event) => {
+button.addEventListener("touchstart", (event) => {
   box.classList.add("shaking");
   answer.classList.add("shaking");
   triange.classList.add("shaking");
