@@ -1,17 +1,4 @@
-const button = document.getElementById("ball-button");
-const ball = document.querySelector(".ball");
-const answer = document.querySelector(".ball-answer");
-const triange = document.querySelector(".triangle-bottom-1");
-button.addEventListener("click", () => {
-  ball.classList.add("shaking");
-  answer.classList.add("shaking");
-  triange.classList.add("shaking");
-  setTimeout(() => {
-    ball.classList.remove("shaking");
-    answer.classList.remove("shaking");
-    triange.classList.remove("shaking");
-  }, 600);
-});
+document.getElementById("ball-button").onclick = displayNumberAnswer;
 
 function displayNumberAnswer() {
   let divContainer = document.getElementById("ball-answer");
@@ -57,3 +44,17 @@ function displayNumberAnswer() {
       break;
   }
 }
+const button = document.getElementById("ball-button");
+const ball = document.querySelector(".ball");
+const answer = document.querySelector(".ball-answer");
+const triange = document.querySelector(".triangle-bottom-1");
+button.addEventListener("click", () => {
+  ball.classList.add("shaking");
+  answer.classList.add("shaking");
+  triange.classList.add("shaking");
+  setTimeout(() => {
+    ball.classList.remove("shaking");
+    answer.classList.remove("shaking");
+    triange.classList.remove("shaking");
+  }, 600);
+});
