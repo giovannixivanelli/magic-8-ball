@@ -13,20 +13,6 @@ button.addEventListener("click", () => {
   }, 600);
 });
 
-const box = document.querySelector(".ball");
-const answer = document.querySelector(".ball-answer");
-const triange = document.querySelector(".triangle-bottom-1");
-button.addEventListener("click", () => {
-  box.classList.add("shaking");
-  answer.classList.add("shaking");
-  triange.classList.add("shaking");
-  setTimeout(() => {
-    box.classList.remove("shaking");
-    answer.classList.remove("shaking");
-    triange.classList.remove("shaking");
-  }, 600);
-});
-
 function displayNumberAnswer() {
   let divContainer = document.getElementById("ball-answer");
   divContainer.setAttribute("style", "opacity: 1", "transition-duration: 2s");
