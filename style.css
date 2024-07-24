@@ -237,9 +237,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: white;
-  filter: blur(0.04rem);
+  filter: blur(0.01rem);
   text-shadow: rgba(248, 102, 102, 0.564) 0px -2px 0px;
-  opacity: 0;
 }
 .ball-footer {
   display: flex;
